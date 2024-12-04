@@ -1,0 +1,23 @@
+# Question=find the sum of minimum and maximum element in the array
+n=5
+a=list(map(int,input("enter any 5 elements=\n").split()))
+max=max(a)
+min=min(a)
+sum=min+max
+print(max,min,sum)        
+
+                    #OR (both above and below codes does the same work.)
+if a[0]>a[1]:
+        max1=a[0]
+        min1=a[1]
+else:
+        min1=a[0]
+        max1=a[1]
+
+for i in range(2,n):   #it will run from index=2,3,4 or till last element leaving first 2 elements
+        if a[i]>max1:
+            max1=a[i]
+        if a[i]<min1:
+            min1=a[i]
+sum1=max1+min1
+print(max1,min1,sum1)
