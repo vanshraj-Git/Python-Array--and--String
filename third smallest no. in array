@@ -1,0 +1,5 @@
+#find the 3rd smallest no. in the array
+a=list(map(int,input("enter 10 elements=").split()))
+a.sort()
+print(a)
+print("the third smallest no. in array =",a[2])
